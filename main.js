@@ -26,7 +26,10 @@ function Ball(x, y, velX, velY, color, size) {
 }
 
 
-
+function playSound(sound) {
+  let soundPlayed = new Audio(sound)
+  soundPlayed.play();
+}
 
 Ball.prototype.draw = function() {
   ctx.beginPath();
@@ -105,7 +108,7 @@ Ball.prototype.collisionDetect = function() {
         // balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) +')';
         balls[j].velX = -(balls[j].velX)
         balls[j].velY = -(balls[j].velY)
-
+        playSound("bird.mp3")
       }
     }
   }

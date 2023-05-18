@@ -10,6 +10,8 @@ html {
 body {
   overflow: hidden;
   height: inherit;
+display: flex;
+flex-wrap: wrap;
 }
 
 h1 {

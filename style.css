@@ -23,7 +23,7 @@ h1 {
   color: transparent;
   text-shadow: 0 0 4px white;
 }
-#settingsBox {
+.settingsBox {
 width: 200px;
 display: flex;
 flex-wrap: wrap;

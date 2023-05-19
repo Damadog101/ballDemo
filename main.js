@@ -67,7 +67,7 @@ Ball.prototype.update = function() {
 
 let balls = [];
 
-while (balls.length < 10) {
+while (balls.length < 100) {
   let size = 10;
   let ball = new Ball(
    

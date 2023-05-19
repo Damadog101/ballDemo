@@ -13,6 +13,18 @@ let amount = document.getElementById("amount");
 
 // function to generate random number
 
+
+let images = {
+	1 : "/images/blue.png",
+	2 : "/images/bomb.png",
+	3 : "/images/pink.png",
+	4 : "/images/puff.png",
+	5 : "/images/red.png",
+	6 : "/images/yellow.png"
+	
+}
+
+
 function random(min, max) {
 	const num = Math.floor(Math.random() * (max - min + 1)) + min;
 	return num;

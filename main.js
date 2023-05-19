@@ -92,6 +92,8 @@ amount.addEventListener("input", () => {
 			createBall();
 			console.log(amount.innerHTML);
 		}
+	} else if (amount.value <= 0) {
+		return;
 	} else {
 		while (balls.length < amount.value) {
 			createBall();

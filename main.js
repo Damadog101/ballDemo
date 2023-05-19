@@ -63,12 +63,25 @@ Ball.prototype.update = function () {
 let balls = [];
 
 function createBall() {
-	let size = 4;
+	// Ball Size
+	if (radius.value <= 0 || radius.value == " ") {
+		size = 4;
+	} else {
+		size = parseInt(radius.value);
+	}
+
+	// Ball Speed
+	if (speed.value <= 0 || speed.value == " ") {
+		velocity = random(-7, 7);
+	} else {
+		velocity = parseInt(speed.value);
+	}
+
 	let ball = new Ball(
 		random(0 + size, width - size),
 		random(0 + size, height - size),
-		random(-7, 7),
-		random(-7, 7),
+		velocity,
+		velocity,
 		"rgb(" + random(0, 255) + "," + random(0, 255) + "," + random(0, 255) + ")",
 		size
 	);

@@ -135,18 +135,18 @@ Ball.prototype.collisionDetect = function () {
 
 loop();
 
-window.addEventListener("click", () => {
-	let size = 10;
-	let ball = new Ball(
-		// ball position always drawn at least one ball width
-		// away from the edge of the canvas, to avoid drawing errors
-		random(0 + size, width - size),
-		random(0 + size, height - size),
-		random(-7, 7),
-		random(-7, 7),
-		"rgb(" + random(0, 255) + "," + random(0, 255) + "," + random(0, 255) + ")",
-		size
-	);
+// window.addEventListener("click", () => {
+// 	let size = 10;
+// 	let ball = new Ball(
+// 		// ball position always drawn at least one ball width
+// 		// away from the edge of the canvas, to avoid drawing errors
+// 		random(0 + size, width - size),
+// 		random(0 + size, height - size),
+// 		random(-7, 7),
+// 		random(-7, 7),
+// 		"rgb(" + random(0, 255) + "," + random(0, 255) + "," + random(0, 255) + ")",
+// 		size
+// 	);
 
-	balls.push(ball);
-});
+// 	balls.push(ball);
+// });
